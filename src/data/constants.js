@@ -8,7 +8,7 @@ export const Bio = {
     "I consider myself as a responsible and proactive person ready to lern through work and finding new challenges. I've worked abroad when I was younger and that helped me not only perfectioning my language and communication skills but to be more open minded. I love music (I play the guitar), my dogs Ilun and Kaia, football and I'm now developing some kind of interest on fitness and healthy lifestyle. ",
   github: "https://github.com/Endika7593",
   resume:
-    "https://drive.google.com/file/d/1AJ8M5FrMJ1qvl_L5Ok3TiJqNj4XJqOyx/view?usp=sharing",
+    "https://drive.google.com/file/d/1T9Nwl-FbPrZPbnXGUPqK5T2kvJNAbHaC/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/endika-acedo-gonz%C3%A1lez-432a1828b",
 };
 
