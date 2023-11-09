@@ -116,7 +116,7 @@ export const experiences = [
     role: "Full Stack Developer",
     company: "Bewaters, The Bridge Talent Accelerator and Aquadat",
     date: "Sep 2023 - ?, currently working on the documentation side of the project", 
-    desc: "My role on the projct was building, styling and deploying the web app usinf different technologies side by side with my work team",
+    desc: "My role on the projct was building, styling and deploying the web app using different technologies side by side with my work team",
     skills: [
       "MongoDB",
       "ExpressJS",
