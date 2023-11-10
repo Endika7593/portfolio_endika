@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import { Bio } from '../../data/constants.js'
 
 const Container = styled.div`
 display: flex;
@@ -125,19 +126,20 @@ const ContactButton = styled.input`
 const Contact = () => {
 
   //hooks
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
   const form = useRef();
+  const { email } = Bio;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_hy2zqrl', 'template_mgcsvl7', form.current, 'Wmu0Th-jucubAvTl6')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   emailjs.sendForm('service_hy2zqrl', 'template_mgcsvl7', form.current, 'Wmu0Th-jucubAvTl6')
+  //     .then((result) => {
+  //       setOpen(true);
+  //       form.current.reset();
+  //     }, (error) => {
+  //       console.log(error.text);
+  //     });
+  // }
 
 
 
@@ -146,24 +148,12 @@ const Contact = () => {
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
-        </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+        
+        <ContactTitle>{email}</ContactTitle> 
+
       </Wrapper>
     </Container>
-  )
+  );
 }
 
 export default Contact
