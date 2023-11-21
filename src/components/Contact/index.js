@@ -70,7 +70,7 @@ const ContactForm = styled.form`
 `
 
 const ContactTitle = styled.div`
-  font-size: 24px;
+  font-size: 1.2rem;
   margin-bottom: 6px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
